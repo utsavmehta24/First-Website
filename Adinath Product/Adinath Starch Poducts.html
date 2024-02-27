@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adinath Products</title>
+</head>
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url(img/bgg.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        background-color: #ce7c0f63;
+        border-radius: 10px;
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        left: 60px;
+        text-align: center;
+        color: black;
+        font-size: 20px;
+    }
+
+    .mid {
+        display: block;
+        /* border: 2px solid green; */
+        width: 65%;
+        margin: 40px auto 0px auto;
+    }
+
+    .right {
+        /* border: 2px solid blue; */
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        right: 100px;
+    }
+
+    .left img {
+        width: 300px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .left img:hover {
+        width: 40%;
+        background-color: none;
+    }
+
+    .left p {
+        display: block;
+    }
+
+    .navbar {
+        font-size: 25px;
+    }
+
+    .navbar ul {
+        background-color: none;
+        border-radius: 10px;
+        margin: 30px 80px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        list-style: none;
+        margin-top: 5px;
+    }
+
+    .navbar a {
+        background-color: aqua;
+        border-radius: 10px;
+        color: black;
+        text-decoration: none;
+        padding: 0px 30px;
+        font-size: 28px;
+        margin: 20px;
+    }
+
+    .navbar a:hover {
+        color: chartreuse;
+        background-color: black;
+        font-size: 32px;
+    }
+
+    .btn {
+        background-color: orange;
+        font-size: 25px;
+        padding: 15px 15px;
+        display: block;
+        margin: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: rgb(214, 18, 18);
+        background-color: rgb(224, 207, 24);
+        font-size: 25px;
+    }
+
+    #btn {
+        margin: 0px auto;
+    }
+
+    .container {
+        text-align: center;
+        margin: 90px 40px;
+        border-radius: 10px;
+        padding: 20px 30px;
+        /* background-color: #cddc39; */
+        background-color: rgba(94, 203, 22, 0.5);
+        font-size: 30px;
+        width: 33%;
+    }
+
+    .container h3 {
+        color: black;
+    }
+
+    .container input {
+        font-size: 20px;
+        text-align: center;
+        background-color: bisque;
+        border-radius: 15px;
+        padding: 12px 12px;
+        margin: 12px 12px;
+        color: rgb(154, 10, 144);
+    }
+
+    input::placeholder {
+        color: rgb(219, 97, 21);
+    }
+
+    .bbt {
+        font-size: 20px;
+        text-align: center;
+        background-color: rgb(147, 168, 10);
+        border-radius: 15px;
+        padding: 12px 12px;
+        margin: 12px 12px;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+    }
+    .director {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 230px;
+        right: 85px;
+        width: 485px;
+        font-weight: bold;
+        border-radius: 46px 47px 55px 10px;
+        background-color: rgb(219, 209, 16,0.8);
+    }
+
+    .director img {
+        width: 100%;
+        border-radius: 45px;
+    }
+
+    .about {
+        text-align: center;
+        margin: 7px;
+        padding: 12px 15px;
+        position: relative;
+        color: black;
+        font-size: 15px;
+    }
+    .our{
+        /* border: 2px solid blue; */
+        width: 33%;
+        color: bla;
+        margin: 10px 50px;
+        text-align: center;
+        padding: 10px;
+        color: black;
+        background-color: rgb(199, 192, 43, 0.5);
+        font-size: 25px;
+        border-radius: 30px;
+    }
+    .details{
+        margin: 10px;
+    }
+    .details span{
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/Logo.jpg" alt="Adinath Products Logo">
+            <div><strong>Adinath Product&#169</strong></div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Address</a></li>
+                    <li><a href="#">Adout</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <!-- <div class="search">
+                            <input type="text" name="search" id="search" placeholder="this is a search box">
+                        </div> -->
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <div class="right">
+            <button class="btn">Chat With us!</button>
+            <button class="btn" id="btn">Place Order<br>Now!!!</button>
+        </div>
+    </header>
+    <div class="container">
+        <form action="noaction.php">
+            <h3>Enter Your Details!!!</h3>
+            <input type="text" placeholder="Enter Your name">
+            <input type="text" placeholder="Enter Your Email Id">
+            <input type="text" placeholder="Enter Your Country">
+            <input type="text" placeholder="Enter Your Contact Details"><br>
+            <button class="bbt">Sumbit Now!</button>
+        </form>
+    </div>
+    <div class="director">
+        <img src="img/Director.jpg" alt="Sunil V. Mehta">
+        <div class="about">Sunil Mehta is a seasoned professional and the Managing Director of Adinath Products, a
+            leading company specializing in the production and sale of essential corn-based products such as Maize
+            Starch, Glucose, and Corn Flour. With a remarkable career spanning 25 years, Sunil has emerged as a
+            visionary leader in the manufacturing industry.</div>
+        <div class="about">Under his adept guidance, Adinath Products has expanded its footprint not only in India but
+            also in
+            Nigeria, solidifying its position as a key player in the global market. Sunil's extensive experience in the
+            field, coupled with his in-depth expertise, has consistently yielded noteworthy results for the company.
+        </div>
+        <div class="about">
+            As a forward-thinking individual, Sunil Mehta continues to drive innovation and efficiency in the production
+            processes, ensuring that Adinath Products remains at the forefront of the industry. His commitment to
+            excellence and dedication to delivering high-quality products have contributed significantly to the success
+            and reputation of Adinath Products in the competitive market.</div>
+    </div>
+    <div class="our">
+        <h2><em>Our Details!!</em></h2>
+        <div class="details">
+            <span>Email Us:</span><strong>adinathproducts@gamil.com</strong>
+        </div>
+        <div class="details">
+            <span>Contact Us:</span><strong>+91-8306080595</strong>
+        </div>
+    </div>
+</body>
+
+</html>
